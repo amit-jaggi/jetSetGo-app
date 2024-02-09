@@ -1,38 +1,196 @@
 .App {
-  text-align: center;
+  /* border: 2px solid green; */
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('./assets/aeroplane.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  cursor: default;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App>.header-container {
+  /* border: 2px solid red; */
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  padding: 0 5%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App>.header-container > .link {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
+.App>.header-container > .link >.left-header {
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: center;
+}
+
+.App>.header-container > .link > .left-header>.header-logo {
+  /* border: 1px solid red; */
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  color: #000;
+}
+
+.App>.header-container > .link > .left-header >.header-logo-icon {
+  /* border: 1px solid yellow; */
+  height: 60px;
+}
+
+.App>.header-container>.right-header {
+  /* border: 2px solid green; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App>.header-container>.right-header > .otherlink {
+  text-decoration: none;
+  color: #000;
+}
+
+.App>.header-container>.right-header>  .otherlink >.option-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.App>.header-container>.right-header>.user-account {
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+}
+
+.App>.search-container {
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.App>.search-container>.search-flight {
+  width: 75%;
+  padding: 2.5% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .App > .search-container > .search-flight > .style-trip {
+  border: 1px solid  red;
+} */
+
+
+.App>.search-container>.search-flight>.input-container {
+  /* border: 2px solid green; */
+  margin: 2% 0 3% 0;
+  display: flex;
+  flex-direction: column;
 }
+
+.App>.search-container>.search-flight>.input-container>.input-fields {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.App>.search-container>.search-flight>.input-container>.input-fields .date-picker-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100px; */
+  position: relative;
+}
+
+.App>.search-container>.search-flight>.input-container>.input-fields .date-picker-container>.calendar {
+  width: 180px;
+}
+
+.App>.search-container>.search-flight>.input-container>.error-field {
+  padding: 1% 0 0 3%;
+}
+
+
+.App>.search-container>.search-flight>.shift-btn-right {
+  /* border: 2px solid blue; */
+  text-align: right;
+  margin: 0 5%;
+}
+
+.App>.search-container>.search-flight>.shift-btn-right>.search-btn {
+  width: 200px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: none;
+}
+
+
+
+
+
+.App>.flight-parent-container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 150px; 
+  padding-bottom: 100px; 
+}
+
+.App>.flight-parent-container>.flight-child-container {
+  margin: 0 auto;
+  width: 80%;
+  padding: 3% 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.App>.flight-parent-container>.flight-child-container> .display-controls {
+  width: 30%;
+  padding: 2% 1% 0 1%;
+  
+}
+.App>.flight-parent-container>.flight-child-container> .display-controls > .control-container {
+  /* border: 1px solid red; */
+  width: 100%;
+  /* min-height: 100%; */
+  padding: 10% 5%;
+}
+
+/* .App>.flight-parent-container>.flight-child-container> .display-controls > .control-container > .filter-control {
+  border: 1px solid blue;
+} */
+
+.App>.flight-parent-container>.flight-child-container> .display-data {
+  width: 70%;
+  padding: 2% 1% 0 1%;
+}
+
+.App>.flight-parent-container>.flight-child-container> .display-data > .flight-box {
+  margin-bottom: 2%;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+/* .App>.flight-parent-container>.flight-child-container> .display-data > .flight-box > . {} */
